@@ -16,7 +16,7 @@ namespace SimpleUseOfArgs
                 parameter = currentArgument.Current;
                 intValue = int.Parse(parameter);
             }
-            catch (InvalidOperationException)
+            catch (ArgumentNullException)
             {
                 throw new ArgsException(ErrorCode.MISSING_INTEGER);
             }

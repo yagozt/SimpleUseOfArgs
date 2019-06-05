@@ -54,15 +54,15 @@ namespace SimpleUseOfArgs
                 case ErrorCode.INVALID_ARGUMENT_FORMAT:
                     return $"{errorParameter} is not a valid argument format.";
                 case ErrorCode.UNEXPECTED_ARGUMENT:
-                    return $"Argument {errorArgumentId} unexpected.";
+                    return $"Argument -{errorArgumentId} unexpected.";
                 case ErrorCode.INVALID_ARGUMENT_NAME:
                     return $"{errorArgumentId} is not a validi argument name.";
                 case ErrorCode.MISSING_STRING:
-                    return $"Could not find string parameter for {errorArgumentId}.";
+                    return $"Could not find string parameter for -{errorArgumentId}.";
                 case ErrorCode.MISSING_INTEGER:
-                    return $"Could not find integer parameter for {errorArgumentId}.";
+                    return $"Could not find integer parameter for -{errorArgumentId}.";
                 case ErrorCode.INVALID_INTEGER:
-                    return $"Argument {errorArgumentId} expects an integer but was {errorParameter}.";
+                    return $"Argument -{errorArgumentId} expects an integer but was {errorParameter}.";
                 case ErrorCode.MISSING_DOUBLE:
                     return $"Could not find double parameter for {errorArgumentId}.";
                 case ErrorCode.INVALID_DOUBLE:

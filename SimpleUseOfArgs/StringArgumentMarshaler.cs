@@ -11,7 +11,8 @@ namespace SimpleUseOfArgs
         {
             try
             {
-                currentArgument.MoveNext();
+                if(!currentArgument.MoveNext())
+                    throw new ArgsException(ErrorCode.MISSING_STRING);
                 stringValue = currentArgument.Current;
             }
             catch (InvalidOperationException)
